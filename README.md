@@ -1,6 +1,6 @@
 # Customer Management System
 
-A comprehensive Laravel-based system for managing customers, payments, and debts with advanced filtering, reporting, and chart visualization capabilities. This application helps businesses track customer data, monitor transactions, and generate PDF reports, offering an intuitive and easy-to-use interface with role-based access control.
+A comprehensive Laravel-based system for managing customers, payments, and debts with advanced filtering, reporting, and chart visualization capabilities. This application helps businesses track customer data, monitor transactions, and generate PDF reports, offering an intuitive and easy-to-use interface.
 
 ## Features
 
@@ -45,12 +45,44 @@ To install and run the project locally, follow these steps:
     ```bash
     php artisan db:seed
 
-
 8. **Start the development server**:
     ```bash
     php artisan serve
 
-
 9. **Build frontend assets (optional)**:
     ```bash
     npm run dev
+
+# Usage
+Once installed, you can access the application at http://localhost:8000. The system allows you to:
+
+- **Add, edit, and manage customer data.**
+- **Record payments and debts for each customer.**
+- **View the overall balance of payments and debts on the dashboard.**
+- **Search customers by various fields (name, phone, company, etc.).**
+- **Generate and download PDF reports for customers or date-based transaction summaries.**
+- **Visualize payments and debts using line and pie charts.**
+
+# Example Use Cases
+- **Track how much each customer owes and their payments over time.**
+- **Generate reports to export and share with accounting teams.**
+- **Visualize trends in customer payments and debts over specific date ranges.**
+
+
+## Technologies Used
+- **Backend**: Laravel (PHP framework)
+- **Frontend**: Blade templates, Tailwind CSS
+- **Database**: MySQL
+- **Charts**: Chart.js
+- **PDF Generation**: DomPDF
+- **Version Control**: Git
+
+# Contribution
+Contributions are welcome! If you'd like to contribute, feel free to fork the repository and submit a pull request.
+
+
+## Contact
+For any inquiries or feedback, feel free to reach out:
+
+- **Email**: mohamedbarqb@gmail.com
+- **LinkedIn**: www.linkedin.com/in/mohammad-barq
