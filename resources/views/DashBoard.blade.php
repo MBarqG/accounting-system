@@ -46,5 +46,7 @@
                 @endforeach
             </tbody>
         </table>
+        <a href="{{route('customer.create')}}"><button class="w-full py-2 px-4 bg-slate-100 rounded text-blue-700">
+        <p class="float-left pt-1">+ Add Customer</p></button></a>
     </div>
 @endsection

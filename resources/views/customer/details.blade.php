@@ -42,6 +42,8 @@
                     @endforeach
                 </tbody>
             </table>
+            <a href="{{ route('add.payment', ['customer' => $customer->id]) }}"><button class="w-full py-2 px-4 bg-slate-100 rounded text-blue-700">
+                <p class="float-left pt-1">+ Add Payment</p></button></a>
         </div>
 
         <!-- Debts List -->
@@ -67,6 +69,8 @@
                     @endforeach
                 </tbody>
             </table>
+            <a href="{{ route('add.debt', ['customer' => $customer->id])}}"><button class="w-full py-2 px-4 bg-slate-100 rounded text-blue-700">
+                <p class="float-left pt-1">+ Add Debt</p></button></a>
         </div>
     </div>
 @endsection

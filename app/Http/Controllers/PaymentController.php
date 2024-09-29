@@ -15,6 +15,11 @@ class PaymentController extends Controller
         return view('payment.create', compact('customers'));
     }
 
+    public function createFromDetails(Customer $customer)
+    {
+        return view('payment.directAdd', compact('customer'));
+    }
+
 
     public function store(Request $request)
     {

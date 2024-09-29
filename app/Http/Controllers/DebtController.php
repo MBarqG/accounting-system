@@ -14,6 +14,11 @@ class DebtController extends Controller
         return view('debt.create', compact('customers'));
     }
 
+    public function createFromDetails(Customer $customer)
+    {
+        return view('debt.directAdd', compact('customer'));
+    }
+
     public function store(Request $request)
     {
         $validated = $request->validate([

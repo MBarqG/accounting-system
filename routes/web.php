@@ -12,6 +12,7 @@ Route::get('/customer/add', [CustomerController::class, 'create'])->name('custom
 Route::post('/customer/store', [CustomerController::class, 'store'])->name('customer.store');
 
 
+
 Route::get('/', [CustomerController::class, 'Dashboard'])->name('Dashboard');
 Route::get('/customer/{id}', [CustomerController::class, 'show'])->name('customer.details');
 Route::get('/search', [CustomerController::class, 'search'])->name('search.customers');
@@ -20,14 +21,22 @@ Route::get('/search', [CustomerController::class, 'search'])->name('search.custo
 
 Route::get('/payment/add', [PaymentController::class, 'create'])->name('payment.create');
 Route::post('/payment/store', [PaymentController::class, 'store'])->name('payment.store');
+Route::get('/customers/{customer}/add-payment', [PaymentController::class, 'createFromDetails'])->name('add.payment');
+
+
 
 Route::get('/debt/add', [DebtController::class, 'create'])->name('debt.create');
 Route::post('/debt/store', [DebtController::class, 'store'])->name('debt.store');
+Route::get('/customers/{customer}/add-debt', [DebtController::class, 'createFromDetails'])->name('add.debt');
+
+
 
 Route::get('/charts', [ChartsController::class, 'chart'])->name('charts.chart');
 
 
+
 Route::get('/customers/{id}/pdf', [CustomerController::class, 'generatePDF'])->name('customers.pdf');
+
 
 
 Route::get('/report', [ReportController::class, 'showForm'])->name('report.form');
